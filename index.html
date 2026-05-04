@@ -83,21 +83,22 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 1 of 5</span>
-        <span class="beat-time">14s · cumulative 0:14</span>
+        <span class="beat-time">28s · cumulative 0:28</span>
       </div>
       <h1 class="beat-title">Setup, what this is and who uses it</h1>
       <div class="body"><h1>Beat 1 · Setup</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>Here&#x27;s <strong>IND Forge</strong>. The app preclinical teams use to build the Investigational New Drug application, better known as the IND, which is submitted to the FDA before dosing the first human. It pulls together every piece of evidence the agency needs to clear that first dose: animal pharmacology, toxicology, manufacturing, the proposed starting dose.</blockquote>
+<blockquote>Here&#x27;s <strong>IND Forge</strong>. The app preclinical teams use to build the Investigational New Drug application, better known as the IND, which is submitted to the FDA before dosing the first human. What these teams are primarily looking for is three things. One, evidence the drug is safe enough to put in a person. Two, evidence it&#x27;s likely to work in the disease they&#x27;re targeting. And three, a defensible starting dose with a real safety margin built in. They gather all of that through a long process: in vitro assays, animal pharmacology, GLP toxicology studies, biomarker work, manufacturing scale-up. By the time they&#x27;re sitting in this app, they&#x27;re not generating the evidence anymore, they&#x27;re assembling the case file. So let&#x27;s walk through what a typical week looks like for them.</blockquote>
 
 <h2>Presenter notes</h2>
 
 <ul>
-<li><strong>Plain-English opener.</strong> Define IND once, up front, then move on. Everything after assumes the audience has it.</li>
-<li><strong>Gesture cue:</strong> sweep across the header strip (compound INDF-127, IND target Q4 2026, Phase 1 trial). Audience reads it; you don&#x27;t have to.</li>
-<li><strong>Land &quot;to dose the first human&quot;.</strong> That threshold is what every clinical person in the room understands intuitively. It&#x27;s the moment.</li>
+<li><strong>Define IND once, up front.</strong> Everything after assumes the audience has it.</li>
+<li><strong>Land the three asks</strong> (safe, effective, defensible dose). Those are the bones the rest of the talk hangs on.</li>
+<li><strong>Gesture cue:</strong> sweep across the header strip (compound INDF-127, IND target Q4 2026, Phase 1 trial) while you say &quot;case file&quot;. Audience reads it; you don&#x27;t have to.</li>
+<li><strong>Tee up the next beat</strong> with &quot;what a typical week looks like&quot;. That earns the transition into the HPC step.</li>
 </ul></div>
     </div>
   </div>
@@ -111,14 +112,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 2 of 5</span>
-        <span class="beat-time">16s · cumulative 0:30</span>
+        <span class="beat-time">18s · cumulative 0:46</span>
       </div>
       <h1 class="beat-title">The HPC step, multi-omics with confidence intervals</h1>
       <div class="body"><h1>Beat 2 · The HPC step</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>The compute-heavy step is integrating multi-omics across the animal cohort to confirm which biomarkers actually translate to humans, and to put confidence intervals around that translation so reviewers know how much to trust it. We&#x27;re talking hundreds of CPU-hours per run, and the team needs to rerun it as new data comes in.</blockquote>
+<blockquote>The first heavy lift in assembling that case file is the translatability question: of all the biomarkers we saw move in the animals, which ones are actually going to behave the same way in humans? That&#x27;s a multi-omics integration across the animal cohort, with confidence intervals around every estimate so the reviewers know how much to trust it. Hundreds of CPU-hours per run, and the team needs to rerun it as new data comes in.</blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -139,14 +140,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 3 of 5</span>
-        <span class="beat-time">15s · cumulative 0:45</span>
+        <span class="beat-time">17s · cumulative 1:03</span>
       </div>
       <h1 class="beat-title">The catch, animal data behind the firewall</h1>
       <div class="body"><h1>Beat 3 · The catch</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>But here&#x27;s the catch. Animal data lives behind the firewall, on-prem only, by IT policy. Routing it to the cloud triggers a six-week data-transfer review every single time, and that&#x27;s a non-starter for a team trying to hit an IND target. So the obvious answer, &quot;just send it to the cloud and run it there,&quot; doesn&#x27;t work.</blockquote>
+<blockquote>But here&#x27;s the catch the team runs into every single time they want to rerun this. Animal data lives behind the firewall, on-prem only, by IT policy. Routing it to the cloud triggers a six-week data-transfer review, and that&#x27;s a non-starter for a team trying to hit an IND target. So the obvious answer, &quot;just send it to the cloud and run it there,&quot; is off the table before the meeting even starts.</blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -167,14 +168,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 4 of 5</span>
-        <span class="beat-time">14s · cumulative 0:59</span>
+        <span class="beat-time">16s · cumulative 1:19</span>
       </div>
       <h1 class="beat-title">The SLURM moment, compute moves to the data</h1>
       <div class="body"><h1>Beat 4 · The SLURM moment</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>This is where SLURM in Domino comes in. The same workload routes directly to the on-prem cluster where the animal data already lives. The job runs there, the results come back, and the data itself never crosses the firewall. <strong>The data doesn&#x27;t move. The compute moves to it.</strong></blockquote>
+<blockquote>Here&#x27;s how the platform handles it. With SLURM in Domino, the team submits the same workload, and instead of pulling the data out, the job routes directly to the on-prem cluster where that animal data already lives. The job runs there, the results come back, and the data itself never crosses the firewall. <strong>The data doesn&#x27;t move. The compute moves to it.</strong></blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -195,14 +196,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 5 of 5</span>
-        <span class="beat-time">13s · cumulative 1:12</span>
+        <span class="beat-time">15s · cumulative 1:34</span>
       </div>
       <h1 class="beat-title">The seam, pharmacometrician picks up the trail</h1>
       <div class="body"><h1>Beat 5 · The seam</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>Then the pharmacometrician picks up that exact same evidence trail to compute the first-in-human starting dose. Same run, same lineage, fully auditable end to end, and none of it ever left the on-prem environment. <strong>One audit chain, no egress.</strong></blockquote>
+<blockquote>And here&#x27;s the seam. The pharmacometrician, the next person down the line, picks up that exact same evidence trail to compute the first-in-human starting dose. Same run, same lineage, fully auditable end to end, and none of it ever left the on-prem environment. That&#x27;s how a defensible starting dose gets built. <strong>One audit chain, no egress.</strong></blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -221,7 +222,7 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="nav-dots"><button class="nav-dot" data-target="0" title="Beat 1: Setup, what this is and who uses it"></button><button class="nav-dot" data-target="1" title="Beat 2: The HPC step, multi-omics with confidence intervals"></button><button class="nav-dot" data-target="2" title="Beat 3: The catch, animal data behind the firewall"></button><button class="nav-dot" data-target="3" title="Beat 4: The SLURM moment, compute moves to the data"></button><button class="nav-dot" data-target="4" title="Beat 5: The seam, pharmacometrician picks up the trail"></button></div>
   </div>
   <div class="timing">
-    <span>Total <strong>1:12</strong></span>
+    <span>Total <strong>1:34</strong></span>
     <span class="clock" id="clock">0:00</span>
   </div>
   <div class="controls">
@@ -238,7 +239,7 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <p><kbd>1</kbd>–<kbd>5</kbd> jump to beat</p>
     <p><kbd>T</kbd> toggle delivery clock &nbsp;·&nbsp; <kbd>R</kbd> reset clock</p>
     <p><kbd>P</kbd> print run of show &nbsp;·&nbsp; <kbd>?</kbd> toggle this help</p>
-    <p style="margin-top:14px;font-size:12px;color:var(--muted)">Tip: total target is <strong>1:12</strong>. Start the clock when you start speaking.</p>
+    <p style="margin-top:14px;font-size:12px;color:var(--muted)">Tip: total target is <strong>1:34</strong>. Start the clock when you start speaking.</p>
   </div>
 </div>
 <script>
