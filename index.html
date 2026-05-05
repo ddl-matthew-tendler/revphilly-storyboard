@@ -83,14 +83,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 1 of 7</span>
-        <span class="beat-time">16s · cumulative 0:16</span>
+        <span class="beat-time">13s · cumulative 0:13</span>
       </div>
       <h1 class="beat-title">Setup, the front page is the case file</h1>
       <div class="body"><h1>Beat 1 · Setup</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>Here&#x27;s <strong>IND Forge</strong>. Preclinical teams use it to build the Investigational New Drug application, the IND, submitted to the FDA before dosing humans. The front page is their case file. Program identity at the top, compound, indication, IND target, and four tabs underneath: safety and tox, translatability, dose justification, and the final package. They&#x27;re proving three things: it&#x27;s safe, it&#x27;s likely to work, and the starting dose is defensible.</blockquote>
+<blockquote><strong>IND Forge</strong> is the app preclinical teams use to build the IND, the Investigational New Drug application, submitted to the FDA before any human dose. The front page is their case file: program identity up top, four tabs underneath for safety, translatability, dose, and the final package.</blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -111,14 +111,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 2 of 7</span>
-        <span class="beat-time">14s · cumulative 0:30</span>
+        <span class="beat-time">8s · cumulative 0:21</span>
       </div>
       <h1 class="beat-title">Translatability Review, three omics types pinned on-prem</h1>
       <div class="body"><h1>Beat 2 · Translatability Review inputs</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>On the Translatability Review tab, the team configures the run. Three different omics data types feed in: RNA-seq, proteomics, metabolomics, all from the on-prem NetApp volume by IT policy. Eighteen thousand transcripts, four thousand proteins, six hundred metabolites, across the animal cohort. The compute shape is HPC, and the orange callout makes the residency rule explicit.</blockquote>
+<blockquote>The Translatability Review pulls three omics types, RNA-seq, proteomics, metabolomics, all pinned on-prem by IT policy. HPC-shaped workload across the animal cohort.</blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -139,14 +139,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 3 of 7</span>
-        <span class="beat-time">20s · cumulative 0:50</span>
+        <span class="beat-time">12s · cumulative 0:33</span>
       </div>
       <h1 class="beat-title">The SLURM moment, compute moves to the data</h1>
       <div class="body"><h1>Beat 3 · The SLURM moment</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>Hit Run, and <strong>here&#x27;s the SLURM moment</strong>. The job doesn&#x27;t get pulled to the cloud. It routes directly to the on-prem Cambridge HPC cluster, where the data already lives, as a SLURM array job. SLURM is the standard scheduler in pharma HPC. The compliance pills confirm what just happened: animal-omics data residency held, internal IT approved, GLP audit chain preserved end-to-end. <strong>The data doesn&#x27;t move. The compute moves to it.</strong></blockquote>
+<blockquote>Hit Run. <strong>Here&#x27;s the SLURM moment.</strong> The job routes to the on-prem Cambridge HPC, where the data already lives, as a SLURM array job. Compliance pills confirm: residency held, IT approved, GLP audit chain preserved. <strong>The data doesn&#x27;t move. The compute moves to it.</strong></blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -168,14 +168,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 4 of 7</span>
-        <span class="beat-time">12s · cumulative 1:02</span>
+        <span class="beat-time">7s · cumulative 0:40</span>
       </div>
       <h1 class="beat-title">Sweep results, eight candidates with confidence intervals</h1>
       <div class="body"><h1>Beat 4 · Sweep results</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>The job comes back with eight biomarker candidates, each with a 95% confidence interval from a thousand bootstraps. CXCL9 leads. One hundred and thirty-four minutes of wall time, no firewall crossed.</blockquote>
+<blockquote>Eight candidates back, each with a 95% confidence interval. CXCL9 leads. No firewall crossed.</blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -196,14 +196,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 5 of 7</span>
-        <span class="beat-time">24s · cumulative 1:26</span>
+        <span class="beat-time">13s · cumulative 0:53</span>
       </div>
       <h1 class="beat-title">PK/PD &amp; FIH Dose, inputs, recommendation, math, exposure response</h1>
       <div class="body"><h1>Beat 5 · PK/PD &amp; FIH Dose</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>Now the PK/PD tab. Every input the pharmacometrician edits, NOAEL, allometric exponent, safety factor, MABEL parameters, recomputes the recommended first-in-human dose live: 0.8 milligrams, MABEL-controlled. Below it, the math walkthrough shows every step with the formula and the citation. FDA 2005 for HED and MRSD, EMA 2017 §4.4 for MABEL, ICH M3 for the exposure margin. And the exposure-response chart frames where MABEL, EC50, and NOAEL all sit relative to the starting dose, so a reviewer can see the safety window with their own eyes.</blockquote>
+<blockquote>PK/PD tab. Inputs are editable, the FIH dose recomputes live: 0.8 mg, MABEL-controlled. Every step shows the formula and citation, FDA 2005, EMA 2017, ICH M3. The exposure-response chart shows where MABEL, EC50, and NOAEL sit relative to the starting dose.</blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -225,14 +225,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 6 of 7</span>
-        <span class="beat-time">14s · cumulative 1:40</span>
+        <span class="beat-time">6s · cumulative 0:59</span>
       </div>
       <h1 class="beat-title">IND Package, what&#x27;s tracked and how it shapes up</h1>
       <div class="body"><h1>Beat 6 · IND Package</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>The IND Package tab is the dossier view. Thirteen sections per 21 CFR §312.23. Five are authored here in IND Forge, the other eight are owned by CMC, Clinical Development, and Regulatory, shown for context. Status rolls up automatically as evidence gets attached. Each section links back to the GLP study or the computation that produced it.</blockquote>
+<blockquote>The package view: thirteen sections per 21 CFR §312.23, five authored here, the rest owned elsewhere. Status rolls up as evidence attaches.</blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -253,14 +253,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="text-pane">
       <div class="beat-meta">
         <span class="beat-num">Beat 7 of 7</span>
-        <span class="beat-time">18s · cumulative 1:58</span>
+        <span class="beat-time">7s · cumulative 1:06</span>
       </div>
       <h1 class="beat-title">Generate the package and send it to Veeva Vault RIM</h1>
       <div class="body"><h1>Beat 7 · Generate and submit</h1>
 
 <h2>Talk track</h2>
 
-<blockquote>Click <strong>Generate IND package</strong>, and the drawer assembles every in-scope section straight from on-screen state. No manual stitching. Snapshot ID, math kernel version, user, and timestamp are captured per 21 CFR Part 11. Scroll to the bottom and the package is liftable directly into Veeva Vault RIM, the regulatory team&#x27;s system of record. <strong>One audit chain, no egress.</strong></blockquote>
+<blockquote>Click <strong>Generate</strong>, the drawer assembles from on-screen state, 21 CFR Part 11 audit trail captured. Scroll to the bottom: send straight to Veeva Vault RIM. <strong>One audit chain, no egress.</strong></blockquote>
 
 <h2>Presenter notes</h2>
 
@@ -280,7 +280,7 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <div class="nav-dots"><button class="nav-dot" data-target="0" title="Beat 1: Setup, the front page is the case file"></button><button class="nav-dot" data-target="1" title="Beat 2: Translatability Review, three omics types pinned on-prem"></button><button class="nav-dot" data-target="2" title="Beat 3: The SLURM moment, compute moves to the data"></button><button class="nav-dot" data-target="3" title="Beat 4: Sweep results, eight candidates with confidence intervals"></button><button class="nav-dot" data-target="4" title="Beat 5: PK/PD &amp; FIH Dose, inputs, recommendation, math, exposure response"></button><button class="nav-dot" data-target="5" title="Beat 6: IND Package, what&#x27;s tracked and how it shapes up"></button><button class="nav-dot" data-target="6" title="Beat 7: Generate the package and send it to Veeva Vault RIM"></button></div>
   </div>
   <div class="timing">
-    <span>Total <strong>1:58</strong></span>
+    <span>Total <strong>1:06</strong></span>
     <span class="clock" id="clock">0:00</span>
   </div>
   <div class="controls">
@@ -297,7 +297,7 @@ body{font-family:var(--body);background:var(--bg);color:var(--fg);font-size:15px
     <p><kbd>1</kbd>–<kbd>7</kbd> jump to beat</p>
     <p><kbd>T</kbd> toggle delivery clock &nbsp;·&nbsp; <kbd>R</kbd> reset clock</p>
     <p><kbd>P</kbd> print run of show &nbsp;·&nbsp; <kbd>?</kbd> toggle this help</p>
-    <p style="margin-top:14px;font-size:12px;color:var(--muted)">Tip: total target is <strong>1:58</strong>. Start the clock when you start speaking.</p>
+    <p style="margin-top:14px;font-size:12px;color:var(--muted)">Tip: total target is <strong>1:06</strong>. Start the clock when you start speaking.</p>
   </div>
 </div>
 <script>
